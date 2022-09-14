@@ -8,6 +8,65 @@
   <title>Manage Landing Page</title>
 </head>
 <body>
-  <h1 class="text-6xl">Hello World</h1>
+  <!-- Navbar -->
+  <nav class="relative container mx-auto p-6">
+    <!-- Flex container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="./images/logo.svg" alt="Manage Logo" />
+      </div>
+      <!-- Menu Items -->
+      <div class="hidden space-x-6 md:flex">
+        <a href="#" class="hover:text-darkGrayishBlue transition duration-300">Pricing</a>
+        <a href="#" class="hover:text-darkGrayishBlue transition duration-300">Product</a>
+        <a href="#" class="hover:text-darkGrayishBlue transition duration-300">About Us</a>
+        <a href="#" class="hover:text-darkGrayishBlue transition duration-300">Careers</a>
+        <a href="#" class="hover:text-darkGrayishBlue transition duration-300">Community</a>
+      </div>
+      <!-- Button -->
+      <a 
+        href="#" 
+        class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
+      >
+        Get Started
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <!-- Hero -->
+    <div 
+      class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:flex-row md:space-x-0"
+    >
+      <!-- Left Item -->
+      <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+        <h1 
+          class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+        >
+          Bring everyone together to build better products.
+        </h1>
+        <p 
+          class="max-w-sm text-center text-darkGrayishBlue md:text-left"
+        >
+          Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.
+        </p>
+        <div class="flex justify-center md:justify-start">
+          <a 
+            href="#" 
+            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+      <!-- Image -->
+      <div class="md:w-1/2">
+        <img src="images/illustration-intro.svg" alt="A graph, a pie chart and some percentages" />
+      </div>
+    </div>
+  </section>
 </body>
 </html>
