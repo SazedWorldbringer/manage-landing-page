@@ -43,6 +43,18 @@
     </div>
 
     <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div 
+        id="menu"
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+      >
+        <a href="#" class="hover:text-brightRed transition duration-300">Pricing</a>
+        <a href="#" class="hover:text-brightRed transition duration-300">Product</a>
+        <a href="#" class="hover:text-brightRed transition duration-300">About Us</a>
+        <a href="#" class="hover:text-brightRed transition duration-300">Careers</a>
+        <a href="#" class="hover:text-brightRed transition duration-300">Community</a>
+      </div>
+    </div>
   </nav>
 
   <!-- Hero -->
@@ -336,5 +348,16 @@
       </div>
     </div>
   </footer>
+  
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('open');
+      nav.classList.toggle('flex');
+      nav.classList.toggle('hidden');
+    })
+  </script>
 </body>
 </html>
